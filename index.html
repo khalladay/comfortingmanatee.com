@@ -1,1 +1,38 @@
-Hi
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40292745-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40292745-2');
+</script>
+    <title>Comforting Manatee Memes</title>
+    <meta name="description" content="Manatee memes to help you feel better"></meta>
+</head>
+<style>
+    body {
+      background-image: url('images/bg.jpg');
+    }
+    </style>
+    
+<script>
+window.onload = choosePic;
+
+var myPix = new Array("images/lion.jpg","images/tiger.jpg","images/bear.jpg");
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * 27)+1;
+     document.getElementById("manatee").src = "images/manatee"+randomNum+".jpg"
+}
+</script>
+<body onload="choosePic()">
+    <div align="center">
+    <img src="images/manatee1.jpg" id="manatee" alt="a comforting manatee photo"><br>
+    <font color="white">Refresh the page for more manatees</font>
+    </div>
+</body>
+   
+</html>
